@@ -100,7 +100,7 @@ public class XenPermissions extends JavaPlugin implements Listener
         private String mysql_username = "user";
         private String mysql_password = "password";
         //
-        private String getGroups = "SELECT user_group_id, secondary_group_ids FROM xf_user WHERE user_id = (SELECT user_id FROM xf_user_field_value WHERE field_id = 'Minecraft' AND username = ? LIMIT 1)";
+        private String getGroups = "SELECT user_group_id, secondary_group_ids FROM xf_user WHERE user_id = (SELECT user_id FROM xf_user_field_value WHERE field_id = 'Minecraft' AND username= ? LIMIT 1)";
         //
         private String clearCommand = "permissions player {0} purge";
         private String setCommand = "permissions player {0} setgroup {1}";
